@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Shear Pin Tools</title>
+<meta name="description" content="Privacy Policy of Shear Pin Tools, the Shear Pin YouTube channel's internal tool: what Google user data it accesses, how it is used, stored, retained and deleted, and how to revoke access.">
+<link rel="icon" type="image/svg+xml" href="gorsel/isaret.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="gorsel/favicon-32.png">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header class="ust">
+  <div class="kap">
+    <a class="logo" href="./" aria-label="Shear Pin, home"><img src="gorsel/kilit-yatay.svg" alt="Shear Pin" width="196" height="32"></a>
+    <nav aria-label="Site">
+      <a href="./#tools">Shear Pin Tools</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="belge-bas">
+    <div class="kap">
+      <p class="tur">Shear Pin Tools</p>
+      <h1>Privacy Policy</h1>
+      <p class="kunye"><span><b>Effective:</b> 20 November 2026</span><span><b>Applies to:</b> Shear Pin Tools and this website</span></p>
+    </div>
+  </div>
+
+  <div class="belge">
+    <div class="kap">
+      <nav class="icindekiler" aria-label="Contents">
+        <p class="tur">Contents</p>
+        <ol>
+          <li><a href="#what">What Shear Pin Tools is</a></li>
+          <li><a href="#data">Google user data we access</a></li>
+          <li><a href="#use">How we use it</a></li>
+          <li><a href="#sharing">Sharing and transfer</a></li>
+          <li><a href="#storage">Storage and retention</a></li>
+          <li><a href="#device">Information on devices</a></li>
+          <li><a href="#revoke">Revoking access and deletion</a></li>
+          <li><a href="#youtube">YouTube and Google</a></li>
+          <li><a href="#website">This website</a></li>
+          <li><a href="#children">Children</a></li>
+          <li><a href="#changes">Changes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
+
+      <div class="metin">
+        <div class="ozet-kutu">
+          <p><b>In short.</b></p>
+          <ul>
+            <li>Shear Pin Tools is used only by the operator of the Shear Pin YouTube channel, for that channel's own account.</li>
+            <li>It reads the channel's own statistics and comments, posts replies a person has approved, and uploads the channel's own videos.</li>
+            <li>Nothing is sold, shared, transferred or used for advertising.</li>
+            <li>Comment text and commenter names are deleted within 30 days.</li>
+            <li>You can revoke access at any time at <a href="https://security.google.com/settings/security/permissions" rel="noopener">security.google.com/settings/security/permissions</a>.</li>
+          </ul>
+        </div>
+
+        <section id="what">
+          <h2>What Shear Pin Tools is</h2>
+          <p>Shear Pin Tools is an internal command-line tool used only by the operator of the Shear Pin YouTube channel (<a href="https://www.youtube.com/@ShearPinFiles" rel="noopener">@ShearPinFiles</a>). It runs on the operator's own computer. It reads the channel's own statistics and comments, posts replies that a person has reviewed and approved, and uploads the channel's own finished videos. It is not offered to other users, and no one else can sign in to it.</p>
+          <p>Shear Pin Tools uses YouTube API Services. When the operator connects the tool to YouTube, it shows links to this Privacy Policy and the <a href="terms.html">Terms of Use</a> before the Google sign-in; connecting means agreeing to both.</p>
+        </section>
+
+        <section id="data">
+          <h2>Google user data we access</h2>
+          <p>When the channel owner signs in with Google, the tool asks for the following permissions (OAuth scopes). It uses each one only for the purposes listed.</p>
+          <table class="kapsam">
+            <thead><tr><th scope="col">Permission</th><th scope="col">What the tool does with it</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><code>youtube.upload</code></td>
+                <td>Uploads the channel's own finished episodes (<code>videos.insert</code>) with their title, description, tags, category, language and scheduled publish time, and sets the thumbnail of a video it has just uploaded (<code>thumbnails.set</code>).</td>
+              </tr>
+              <tr>
+                <td><code>youtube.force-ssl</code></td>
+                <td>Lists the channel's own videos and the comments and replies on them (<code>channels.list</code>, <code>playlistItems.list</code>, <code>videos.list</code>, <code>commentThreads.list</code>, <code>comments.list</code>); posts a reply only after a person approves the exact text (<code>comments.insert</code>); adds the English caption file to a video it has just uploaded (<code>captions.insert</code>); adds that video to the channel's own playlist (<code>playlistItems.insert</code>).</td>
+              </tr>
+              <tr>
+                <td><code>yt-analytics.readonly</code></td>
+                <td>Reads the channel's own views, watch time, average view duration and audience retention (<code>reports.query</code> for the signed-in channel only).</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>The data involved is therefore: the channel's own video list and metadata, the channel's own statistics and analytics reports, and the public comments other people have left on the channel's videos, including the commenter's display name, channel ID, comment text, like count and time. The tool never edits or deletes existing videos, comments, captions, ratings or playlists, and it never reads any other channel's private data.</p>
+        </section>
+
+        <section id="use">
+          <h2>How we use it</h2>
+          <ul>
+            <li>To produce private reports on the channel's performance for the channel operator.</li>
+            <li>To list new comments for the operator to read, and to count audience votes for the next episode.</li>
+            <li>To draft replies. Every reply is shown to a person first and is posted only after that person approves the exact text. The tool does not post automated or bulk comments.</li>
+            <li>To upload the channel's own videos, together with their thumbnail, captions and playlist entry. Each upload is first shown as a dry run and is sent only on an explicit command from the operator.</li>
+          </ul>
+          <p>Shear Pin Tools' use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements. We do not use Google user data for advertising, we do not sell it, and we do not use it to develop, improve or train generalised artificial-intelligence or machine-learning models.</p>
+        </section>
+
+        <section id="sharing">
+          <h2>Sharing and transfer</h2>
+          <p>We do not sell, share, rent or transfer YouTube or Google user data to anyone. No third party, advertiser, data broker or analytics service receives it. Reports stay with the channel operator. The only exception would be where the law requires disclosure.</p>
+        </section>
+
+        <section id="storage">
+          <h2>Storage and retention</h2>
+          <table class="kapsam">
+            <thead><tr><th scope="col">Data</th><th scope="col">Where and for how long</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>OAuth access and refresh tokens</td>
+                <td>On the operator's own computer only, in a file readable only by the operator's user account. Kept until access is revoked or replaced by a new sign-in. Never written to logs, URLs or shared files.</td>
+              </tr>
+              <tr>
+                <td>Comment text, commenter display names and commenter channel IDs (comment lists, vote counts, reply drafts)</td>
+                <td>On the operator's own computer only. Deleted automatically after 30 days: every time the tool reads comments, statistics or votes it also deletes these records once they are older than 30 days. Vote records older than 30 days keep only the totals per option, with no names or text.</td>
+              </tr>
+              <tr>
+                <td>IDs of comments already seen (so that only new comments are listed)</td>
+                <td>Refreshed from YouTube on every run; deleted if not refreshed within 30 days.</td>
+              </tr>
+              <tr>
+                <td>Channel statistics and analytics reports</td>
+                <td>On the operator's own computer only, while access remains authorised; the tool confirms this every time it runs. Reports contain the channel's own numbers and no information about any viewer or commenter. After 30 days, video titles, channel and video IDs and the written summary are removed from each report; only channel-level numbers (subscribers, views, analytics totals) remain.</td>
+              </tr>
+              <tr>
+                <td>Record of replies posted</td>
+                <td>On the operator's own computer only. After 30 days only the date and a one-way fingerprint remain, so that the same reply is never posted twice; comment and reply IDs are removed.</td>
+              </tr>
+              <tr>
+                <td>Upload progress</td>
+                <td>While an upload is in progress, the tool keeps its upload session address locally so that an interrupted upload can resume. It is deleted when the upload finishes. The video ID and playlist entry ID of a finished upload are removed after 30 days; only a note that the episode was uploaded remains.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>No Google user data is stored on any server or in any cloud database operated by us.</p>
+        </section>
+
+        <section id="device">
+          <h2>Information on devices</h2>
+          <p>Shear Pin Tools stores the files described above only on the operator's own computer. It does not place, read or recognise cookies or similar technologies on anyone else's device, and it does not collect device identifiers.</p>
+        </section>
+
+        <section id="revoke">
+          <h2>Revoking access and deletion</h2>
+          <p>Access can be revoked at any time on the Google security settings page: <a href="https://security.google.com/settings/security/permissions" rel="noopener">https://security.google.com/settings/security/permissions</a>. Revoking access makes the stored tokens unusable immediately. After revocation the operator deletes the token file, and all remaining locally stored data obtained from YouTube, including reports, is deleted within 30 days at the latest.</p>
+          <p>If you have commented on a Shear Pin video and want any copy of your comment held by the tool deleted sooner, write to the address in <a href="#contact">Contact</a>; we will delete it within 7 days. Deleting a comment on YouTube itself is done on YouTube.</p>
+        </section>
+
+        <section id="youtube">
+          <h2>YouTube and Google</h2>
+          <p>Shear Pin Tools uses YouTube API Services. By using Shear Pin Tools you agree to be bound by the <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a>. How Google handles data is described in the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> (<a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a>).</p>
+        </section>
+
+        <section id="website">
+          <h2>This website</h2>
+          <p>This website is a set of static pages. It sets no cookies and runs no scripts, analytics or advertising. It is hosted on GitHub Pages; GitHub may log technical information such as IP addresses for security, as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.</p>
+        </section>
+
+        <section id="children">
+          <h2>Children</h2>
+          <p>Shear Pin Tools is not directed at children and is used only by the channel operator.</p>
+        </section>
+
+        <section id="changes">
+          <h2>Changes</h2>
+          <p>If this policy changes, the new version is published on this page with a new effective date. If the tool ever starts using data in a new way, this page will be updated before that happens.</p>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>Questions about this policy or requests about your data: <a href="mailto:shearpinfiles@gmail.com">shearpinfiles@gmail.com</a>.</p>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="alt">
+  <div class="kap">
+    <div>
+      <img src="gorsel/kilit-yatay-ters.svg" alt="Shear Pin" width="210" height="35">
+      <p>Engineering disasters and the safety rules they wrote.</p>
+    </div>
+    <ul>
+      <li><a href="https://www.youtube.com/@ShearPinFiles" rel="noopener">YouTube: @ShearPinFiles</a></li>
+      <li><a href="./">Home</a></li>
+      <li><a href="terms.html">Terms of Use</a></li>
+      <li>Contact: <a href="mailto:shearpinfiles@gmail.com">shearpinfiles@gmail.com</a></li>
+    </ul>
+    <p class="telif">© 2026 Shear Pin. YouTube is a trademark of Google LLC.</p>
+  </div>
+</footer>
+
+</body>
+</html>
