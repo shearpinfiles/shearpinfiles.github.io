@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shear Pin · Engineering disasters and the rules they wrote</title>
-<meta name="description" content="Shear Pin is a YouTube channel about engineering disasters: what broke, why it broke, and the safety rule it wrote. Home of Shear Pin Tools, the channel's internal YouTube tool.">
+<meta name="description" content="Shear Pin is a YouTube channel about engineering disasters: what broke, why it broke, and the safety rule it wrote.">
 <link rel="icon" type="image/svg+xml" href="gorsel/isaret.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="gorsel/favicon-32.png">
 <link rel="stylesheet" href="site.css">
@@ -15,9 +15,7 @@
   <div class="kap">
     <a class="logo" href="./" aria-label="Shear Pin, home"><img src="gorsel/kilit-yatay.svg" alt="Shear Pin" width="196" height="32"></a>
     <nav aria-label="Site">
-      <a href="#tools">Shear Pin Tools</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
+      <a href="https://www.youtube.com/@ShearPinFiles" rel="noopener">YouTube</a>
     </nav>
   </div>
 </header>
@@ -30,6 +28,7 @@
         <h1 id="baslik">What broke.<br>Why it broke.<br><span class="hukum">The rule it wrote.</span></h1>
         <p class="ozet">Shear Pin takes one engineering disaster per episode and follows it from the first warning sign to the moment the structure, plant or machine failed. Every episode ends with the safety rule that the failure forced the world to write.</p>
         <a class="dugme" href="https://www.youtube.com/@ShearPinFiles" rel="noopener">Watch on YouTube <small>@ShearPinFiles&nbsp;→</small></a>
+        <p class="not">A new file every week. Vote in the comments for the next one.</p>
       </div>
       <figure class="sekil">
         <img src="gorsel/isaret.svg" alt="Cross-section of a lap joint: two plates and a pin that has sheared along the plane between them." width="236" height="236">
@@ -39,62 +38,6 @@
   </section>
 
   <div class="oyma" role="presentation"></div>
-
-  <section class="arac" id="tools" aria-labelledby="arac-baslik">
-    <div class="kap">
-      <div class="bas">
-        <div>
-          <p class="etiket">Internal tool</p>
-          <h2 id="arac-baslik">Shear Pin Tools</h2>
-        </div>
-        <p>Shear Pin Tools is a small command-line program that the channel's operator runs on their own computer. It signs in to the Shear Pin channel's own YouTube account with Google OAuth and does four jobs for that one channel. It is not a public service: nobody else can sign in, and it never touches another channel or account.</p>
-      </div>
-
-      <table class="cizelge">
-        <thead>
-          <tr><th scope="col">Job</th><th scope="col">What it does</th><th scope="col">Google API used</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Report</th>
-            <td>Reads the channel's own views, watch time, average view duration and audience retention, and writes a private weekly report for the operator.</td>
-            <td class="api">YouTube Analytics API <code>reports.query</code>; YouTube Data API <code>channels</code>, <code>videos</code>, <code>playlistItems</code> (read)</td>
-          </tr>
-          <tr>
-            <th scope="row">Comments</th>
-            <td>Lists new comments on the channel's own videos, including those held for review, and counts the audience's votes for the next episode.</td>
-            <td class="api">YouTube Data API <code>commentThreads.list</code>, <code>comments.list</code></td>
-          </tr>
-          <tr>
-            <th scope="row">Reply</th>
-            <td>Shows a draft reply first. A reply is posted only after a person has read and approved that exact text. No automated or bulk comments.</td>
-            <td class="api">YouTube Data API <code>comments.insert</code></td>
-          </tr>
-          <tr>
-            <th scope="row">Upload</th>
-            <td>Uploads the channel's own finished episodes with their title, description, thumbnail, English captions and playlist. Every upload is shown as a dry run first and is sent only on an explicit command.</td>
-            <td class="api">YouTube Data API <code>videos.insert</code>, <code>thumbnails.set</code>, <code>captions.insert</code>, <code>playlistItems.insert</code></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="sinir">
-        <div>
-          <h3>Google user data</h3>
-          <p>The tool works only with the Shear Pin channel's own data. It does not sell, share or transfer YouTube or Google user data, does not use it for advertising, and deletes stored comment text, commenter names and IDs within 30 days.</p>
-          <p>Shear Pin Tools' use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
-        </div>
-        <div>
-          <h3>Policies</h3>
-          <ul>
-            <li><a href="privacy.html">Privacy Policy</a>: what data the tool reads, why, where it is kept and how to revoke access.</li>
-            <li><a href="terms.html">Terms of Use</a>: who may use the tool and on what terms.</li>
-            <li>Shear Pin Tools uses YouTube API Services. See the <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer class="alt">
@@ -105,11 +48,9 @@
     </div>
     <ul>
       <li><a href="https://www.youtube.com/@ShearPinFiles" rel="noopener">YouTube: @ShearPinFiles</a></li>
-      <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="terms.html">Terms of Use</a></li>
       <li>Contact: <a href="mailto:shearpinfiles@gmail.com">shearpinfiles@gmail.com</a></li>
     </ul>
-    <p class="telif">© 2026 Shear Pin. YouTube is a trademark of Google LLC. This site sets no cookies and runs no scripts or analytics.</p>
+    <p class="telif">© 2026 Shear Pin. YouTube is a trademark of Google LLC. <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
   </div>
 </footer>
 
